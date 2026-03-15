@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Sleep Calculator</title>
+
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<link rel="stylesheet" href = "bar.css">
+
+<style>
+#map {
+height: 600px;
+width: 100%;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>Click your location</h2>
+
+<div id="map"></div>
+
+<p id="coords">Latitude: — | Longitude: —</p>
+<p id="sunrise">Sunrise: —</p>
+<p id="sunset">Sunset: —</p>
+
+<h3>Daylight and Sleep</h3>
+<div id="main-container">
+    <div id="day-container">
+        <div id = "daybar">
+            <div id = "sunlight"></div>
+            <div id = "sunriseLabel" class = "label"></div>
+            <div id = "sunsetLabel" class = "label"></div>
+        </div>
+    </div>
+    
+
+
+    <div class = "sleep-container">
+        <canvas id ="sleepCircle" width = "200" height="200" ></canvas>
+        <div class="sleep-labels">
+            <div id="label0">0:00</div>
+            <div id="label12">12:00</div>
+            <div id="sleepStartLabel" class = "sleepTimeLabel"></div>
+            <div id="sleepEndLabel" class = "sleepTimeLabel"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="map.js"></script>
+
+</body>
+</html>
